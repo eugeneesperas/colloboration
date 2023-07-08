@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BABE Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px solid #fff; */
+      }
+
+      body {
+        background: linear-gradient(to right, #000428, #004e92);
+      }
+
+      .mainDiv {
+        width: 100vw;
+
+        display: grid;
+        grid-template-columns: 30% 80%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        display: flex;
+        color: #71b6f2;
+
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo span {
+        opacity: 1;
+        transition: color 0.3s;
+      }
+
+      .logo span:hover {
+        cursor: pointer;
+        color: red;
+        box-shadow: 0 0 2px #71b6f2;
+      }
+
+      .chooseDev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        color: #fff;
+      }
+
+      .devs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: ;
+        gap: 20px;
+        font-size: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+      }
+      .devs a {
+        text-decoration: none;
+        color: #b5d7f6;
+        cursor: pointer;
+      }
+
+      .devs a:hover {
+        color: rgb(237, 237, 178);
+        text-decoration: 5px underline;
+      }
+
+      .devImg {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="logo">
+        <span
+          id="bee"
+          onmouseover="changeName('bee')"
+          onmouseout="resetName('bee')"
+          >B</span
+        >
+        <span
+          id="austin"
+          onmouseover="changeName('austin')"
+          onmouseout="resetName('austin')"
+          >A</span
+        >
+        <span
+          id="brian"
+          onmouseover="changeName('brian')"
+          onmouseout="resetName('brian')"
+          >B</span
+        >
+        <span
+          id="eugene"
+          onmouseover="changeName('eugene')"
+          onmouseout="resetName('eugene')"
+          >E</span
+        >
+      </div>
+      <div class="chooseDev">
+        <h1>Choose your Dev</h1>
+      </div>
+    </div>
+    <div class="devs">
+      <div class="devBee"><a href="">Dev Bee</a></div>
+      <div class="devAustin"><a href="">Dev Austin</a></div>
+      <div class="devBrian"><a href="">Dev Brian</a></div>
+      <div class="devEugene"><a href="">Dev Eugene</a></div>
+    </div>
+
+    <div class="devImg">
+      <div class="imgBee">
+        <img src="homepage/4.png" alt="" />
+      </div>
+      <div class="imgAustin">
+        <img src="homepage/3.png" alt="" />
+      </div>
+      <div class="imgBrian">
+        <img src="homepage/1.png" alt="" />
+      </div>
+      <div class="imgEugene">
+        <img src="homepage/2.png" alt="" />
+      </div>
+    </div>
+    <script>
+      function changeName(id) {
+        const element = document.getElementById(id);
+        switch (id) {
+          case "bee":
+            element.textContent = "Bee";
+            break;
+          case "austin":
+            element.textContent = "Austin";
+            break;
+          case "brian":
+            element.textContent = "Brian";
+            break;
+          case "eugene":
+            element.textContent = "Eugene";
+            break;
+          default:
+            break;
+        }
+      }
+
+      function resetName(id) {
+        const element = document.getElementById(id);
+        switch (id) {
+          case "bee":
+            element.textContent = "B";
+            break;
+          case "austin":
+            element.textContent = "A";
+            break;
+          case "brian":
+            element.textContent = "B";
+            break;
+          case "eugene":
+            element.textContent = "E";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
