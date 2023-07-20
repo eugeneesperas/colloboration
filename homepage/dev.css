@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #fff; */
+}
+
+body {
+  background: linear-gradient(to right, #000428, #004e92);
+}
+
+.headerCont {
+  display: flex;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.backToHome {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  width: 10%;
+}
+
+.backToHome a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.backToHome a:hover {
+  border: 1px solid #38bee7;
+}
+
+.imgDev {
+  margin-left: 250px;
+}
+
+.imgDev img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 50%;
+  box-shadow: 0 0 5px #fff;
+}
+
+/* 5 cards per row */
+.divRow {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+/* styles for my cards */
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 3px solid #f1f16c;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #38bee7;
+}
+
+.cardImg img {
+  width: 100%;
+  height: auto;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.Title a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Title a:hover {
+  color: #ef2913;
+  text-decoration: underline 2px #ef2913;
+}

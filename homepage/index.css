@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #fff; */
+}
+
+body {
+  background: linear-gradient(to right, #000428, #004e92);
+}
+
+.mainDiv {
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: 30% 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  display: flex;
+  color: #71b6f2;
+
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  opacity: 1;
+  transition: color 0.3s;
+}
+
+.logo span:hover {
+  cursor: pointer;
+  color: red;
+  box-shadow: 0 0 2px #71b6f2;
+}
+
+.chooseDev {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70vw;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.iconButton {
+  opacity: 0;
+}
+
+.devs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.devCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.devCont a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.devCont a:hover {
+  text-decoration: 5px underline #f61616;
+  color: rgb(237, 237, 178);
+}
+
+.devCont .dev {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+}
